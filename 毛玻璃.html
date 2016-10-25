@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>毛玻璃</title>
+	<style>
+	body{
+		min-width: 100vh;
+		padding-top: calc(50vh - 6em);
+		box-sizing: border-box;
+		margin: 0;
+	}
+	body, main::before{
+		background: url('http://i0.hdslb.com/bfs/archive/453f101fac55d67988f0648ede2edb204afa1c36.png') 0 / cover fixed;
+		
+	}
+	
+	main{
+		cursor: none;
+		position: relative;
+		background: hsla(0,0%,100%,.25);
+	}
+
+	main::before{
+		content: '';
+		top: 0;left: 0;
+		right: 0;bottom: 0;
+		position: absolute;
+		-webkit-filter: blur(30px);
+		filter: blur(30px);
+		overflow: hidden;
+		margin: -20px;
+		z-index: -1;
+	}
+	
+
+	</style>
+</head>
+<body>
+<main>
+<blockquote>“The only way to get rid of a temptation is to yield to it. Resist it, and your soul grows sick with longing for the things it has forbidden to itself, with desire for what its monstrous laws have made monstrous and unlawful.”</em>
+<footer>— <cite>Oscar Wilde, The Picture of Dorian Gray</cite></footer>
+</blockquote>
+</main>
+</body>
+</html>

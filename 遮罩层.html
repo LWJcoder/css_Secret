@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	/*dialog::backdrop{
+		 box-shadow: 0 0 0 50vmax rgba(0,0,0,.5); 
+		background: rgba(0,0,0,.5); 
+	}
+*/
+.Gray{
+	filter: blur(.3em) contrase(.8) brightness(.8);
+	-webkit-filter: blur(5px);
+}
+</style>
+<script>	
+ function x(){
+	var dia = document.getElementsByTagName('dialog')[0];
+	var main = document.getElementsByTagName('main')[0];
+
+		dia.setAttribute('open','');
+		main.className += 'Gray';
+	};
+</script>
+</head>
+<body>
+	<button id="dialog" onclick="x()">show dialog</button>
+	<dialog >
+	hi,this is a dialog:)
+	</dialog>
+<main>this is  a main
+	
+	<div class="lightBox">
+
+	
+
+
+	<div>
+		难题
+很多时候，我们需要通过一层半透明的遮罩层来把后面的一切整体调暗，以便凸显某个特定的 UI 元素，引导用户关注。比如，弹出层（参见图 6-13）以及交互式的“快速指南”就是这种效果的典型案例。这个效果最常见的实现方法就是增加一个额外的 HTML 元素用于遮挡背景，然后为它添加如下样式：
+
+.overlay { /* 用于遮挡背景 */
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,.8);
+}
+
+.lightbox { /* 需要吸引用户注意的元素 */
+    position: absolute;
+    z-index: 1;
+    /* [其余样式] */
+}
+	</div>	</div>
+	</main>
+</body>
+</html>
